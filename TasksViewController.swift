@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TasksViewController.swift
 //  Do it
 //
 //  Created by Timothy Barrett on 8/24/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class TasksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var toDoTableView: UITableView!
     
@@ -62,6 +62,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func addButtonTapped(_ sender: AnyObject) {
         performSegue(withIdentifier: "addSegue", sender: nil)
     }
+    
+    
     
 }
 
