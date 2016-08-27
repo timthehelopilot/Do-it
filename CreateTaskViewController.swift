@@ -27,6 +27,10 @@ class CreateTaskViewController: UIViewController {
         task.name = taskNameTextField.text!
         task.important = inportantSwitch.isOn
         
+        
+        previousVC.tasks.append(task)
+        previousVC.toDoTableView.reloadData()
+        navigationController!.popViewController(animated: true)
     }
    
 }
